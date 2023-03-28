@@ -68,8 +68,8 @@ export default {
 			this.display.loading = true
 
 			try {
-				const { data } = await this.$axios.$post(
-					'https://sys-dev.searchandstay.com/api/admin/login_json',
+				await this.$store.dispatch(
+					'auth/login',
 					JSON.stringify({
 						login: {
 							email: this.login.email,
@@ -77,11 +77,6 @@ export default {
 						},
 					})
 				)
-
-				this.user = {
-					accessToken: data.result.access_token,
-					name: data.result.name,
-				}
 
 				this.$toast.success('Login success')
 			} catch (error) {
