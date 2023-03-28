@@ -1,0 +1,16 @@
+{
+  "name": "search-and-stay",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "core-js": "^3.29.1",
+    "nuxt": "^2.16.3"
+  }
+}
