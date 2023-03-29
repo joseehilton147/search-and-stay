@@ -13,9 +13,7 @@ export const mutations = {
 
 export const actions = {
 	async login({ commit }, userData) {
-		const { data } = await this.$axios
-			.post('https://sys-dev.searchandstay.com/api/admin/login_json', userData)
-			.then(res => res.data)
+		const { data } = await this.$axios.post('login_json', userData).then(res => res.data)
 
 		commit('SET_USER', { name: data.result.name, accessToken: data.result.access_token })
 

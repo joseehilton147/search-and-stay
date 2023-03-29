@@ -20,13 +20,17 @@ export default {
 
 	css: ['~/assets/css/style.css'],
 
-	plugins: [],
+	plugins: ['~/plugins/axios'],
 
 	components: true,
 
 	buildModules: [],
 
 	modules: ['bootstrap-vue/nuxt', '@nuxtjs/axios', 'vue-toastification/nuxt'],
+
+	axios: {
+		baseURL: 'https://sys-dev.searchandstay.com/api/admin',
+	},
 
 	bootstrapVue: {
 		icons: true,

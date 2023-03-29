@@ -1,7 +1,7 @@
 <template>
 	<b-container fluid>
 		<b-row class="align-items-center min-vh-100">
-			<b-col cols="8" offset="2">
+			<b-col cols="6" offset="3">
 				<b-card class="shadow-sm">
 					<b-form @submit="onSubmit">
 						<b-form-group label="Email:" label-for="email" description="task@searchandstay.com">
